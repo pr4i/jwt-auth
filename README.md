@@ -19,4 +19,24 @@
 
 ### Установка
 1. Клонируйте репозиторий:
-```bash
+git clone
+2. установите зависимости:
+cd backend
+npm install
+3. создайте файл .env в папке backend
+JWT_SECRET=your_strong_secret_here
+4.Запуск
+cd backend node server.js
+2. Откройте `frontend/index.html` в браузере
+
+## Функционал
+
+### Бэкенд
+- `POST /register` - регистрация пользователя
+- `POST /login` - вход и получение JWT токена
+- `GET /protected` - защищённый маршрут (требует JWT)
+
+### Фронтенд
+- Форма регистрации
+- Форма входа
+- Кнопка для доступа к защищённым данным
